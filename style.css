@@ -7,8 +7,8 @@ coloque nas sessões indicadas*/
 :root{
     /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
     /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
-   --cor-de-fundo: #F5F5F5;
-   --cor-de-link: #000;
+   --cor-de-fundo: #DCF2F1;
+   --cor-de-link: #0F1035;
 }
 
 body {
@@ -21,6 +21,7 @@ body {
 }
 ol, ul,li {
     list-style: none;
+    color:var(--cor-de-link);
 }
 a{
     text-decoration: none;
@@ -42,6 +43,33 @@ https://en.bem.info/methodology/quick-start/*/
 /*Sección Menu*/
 
 section.menu{
+display:flex;
+margin:2rem 4rem;
+justify-content:space-between;
+
+.menu__header{
+    display:flex;
+    & img{
+        padding:1rem;
+    }
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:8px;
+}
+
+nav .menu__list{
+    display:flex;
+    justify-content:space-between;
+    gap:12px;
+}
+nav .menu__list li:last-child{
+    font-weight:bold;
+}
+
 
 }
 

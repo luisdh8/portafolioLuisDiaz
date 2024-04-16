@@ -4,28 +4,32 @@ en las secciones señaladas */
 /*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
 coloque nas sessões indicadas*/
 
-:root{
-    /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
-    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
-   --cor-de-fundo: #DCF2F1;
-   --cor-de-link: #0F1035;
+:root {
+  /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
+  /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+  --cor-de-fundo: #030637;
+  --cor-de-link: #0f1035;
 }
 
 body {
-    box-sizing: border-box;
-    background-color: var(--cor-de-fundo) ;
-    font-family: 'Raleway';
-    margin: 0;
-    padding: 0;
-    line-height: 1;
+  box-sizing: border-box;
+  background-color: var(--cor-de-fundo);
+  font-family: "Raleway";
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  color: #910a67;
 }
-ol, ul,li {
-    list-style: none;
-    color:var(--cor-de-link);
+ol,
+ul,
+li {
+  list-style: none;
+  padding: 0px;
 }
-a{
-    text-decoration: none;
-    color: var(--cor-de-link);
+
+a {
+  text-decoration: none;
+  color: #910a67;
 }
 
 /*En este desafío nosostros gustaríamos que ustedes intentaran utilizar la metodología BEM. 
@@ -41,120 +45,146 @@ Enlace de la documentación oficial!
 https://en.bem.info/methodology/quick-start/*/
 
 /*Sección Menu*/
+.tudo {
+  max-width: 40rem;
+  margin: 0px auto;
+}
 
-section.menu{
-display:flex;
-margin:2rem 4rem;
-justify-content:space-between;
+section.menu {
+  display: flex;
+  margin: 2rem 0px;
 
-.menu__header{
-    display:flex;
-    & img{
-        padding:1rem;
+  .menu__header {
+    display: flex;
+    & img {
+      padding: 1rem;
     }
-}
+  }
 
-nav{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    gap:8px;
+  nav .menu__list {
+    display: flex;
+    gap: 28px;
+  }
+  nav .menu__list li:last-child {
+    font-weight: bold;
+  }
 }
-
-nav .menu__list{
-    display:flex;
-    justify-content:space-between;
-    gap:12px;
-}
-nav .menu__list li:last-child{
-    font-weight:bold;
-}
-
-
-}
-
 /*Sección Title*/
 
-section.title{
+section.title {
+  & .title__div {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
 
+  & .title__profile {
+    max-width: 15rem;
+    margin: auto;
+  }
+  & .title__container {
+    margin: auto 0px;
+  }
+  & .title__network {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0px;
+    gap: 2rem;
+  }
+
+  .title__network__item a {
+    display: flex;
+    gap: 8px;
+
+    & img {
+      padding: 4px;
+    }
+  }
 }
 
 /*Sección About*/
 
-section.about{
+section.about {
+  background-color: #3c0753;
+  padding: 1rem;
+}
 
+/*Seccion Skills*/
+section.skills {
+  & .skills__line {
+    display: flex;
+    gap: 65px;
+    text-align: center;
+    align-items: baseline;
+  }
 }
 
 /*Sección Hobbies*/
 
-section.hobbies{
-    
+section.hobbies {
+  & .hobbies__line {
+    display: flex;
+    gap: 66px;
+    text-align: center;
+    align-items: baseline;
+  }
 }
 
 /* Experiencia Académica*/
 
-section.academic{
-
+section.academic {
 }
 
 /* experiencia*/
 
-section.experience{
-
+section.experience {
 }
 
 /*Contacto*/
 
-section.formcontato{
-
+section.formcontato {
 }
 
 /*footeer*/
 
-section.footer{
-   
+section.footer {
 }
 
 /* Vamos a desafiarnos trabajando con responsividad?
 Utiliza las referencias de los breakpoints @media abajo */
 
-
 /*Tablet*/
 @media (min-width: 768px) {
+  /* Menú */
 
-/* Menú */
+  /*title*/
 
-/*title*/
+  /*Skills*/
 
-/*Skills*/
+  /*Hobbies*/
 
-/*Hobbies*/
+  /*Formación Académica*/
 
-/*Formación Académica*/
-
-/*Experiencia Profesional*/
-
+  /*Experiencia Profesional*/
 }
 
 /*Mobile*/
 @media (min-width: 425px) {
+  /*Menu*/
 
-/*Menu*/
+  /*Titulo*/
 
-/*Titulo*/
+  /*Sección sobre mi*/
 
-/*Sección sobre mi*/
+  /*Skills*/
 
-/*Skills*/
+  /*Hobbies*/
 
-/*Hobbies*/
- 
-/*Formación Académica*/
+  /*Formación Académica*/
 
-/*Experiencia Profesional*/
+  /*Experiencia Profesional*/
 
- /*Contacto*/
+  /*Contacto*/
 
-/*Footer*/
-
+  /*Footer*/
 }

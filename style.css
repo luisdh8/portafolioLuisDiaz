@@ -8,7 +8,8 @@ coloque nas sessões indicadas*/
   /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
   /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
   --cor-de-fundo: #030637;
-  --cor-de-link: #0f1035;
+  --color-text-color: #910a67;
+  --color-section-bg: #3c0753;
 }
 
 body {
@@ -18,7 +19,7 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1;
-  color: #910a67;
+  color: var(--color-text-color);
 }
 ol,
 ul,
@@ -29,7 +30,7 @@ li {
 
 a {
   text-decoration: none;
-  color: #910a67;
+  color: var(--color-text-color);
 }
 
 /*En este desafío nosostros gustaríamos que ustedes intentaran utilizar la metodología BEM. 
@@ -105,7 +106,7 @@ section.title {
 /*Sección About*/
 
 section.about {
-  background-color: #3c0753;
+  background-color: var(--color-section-bg);
   padding: 1rem;
 }
 
@@ -133,6 +134,14 @@ section.hobbies {
 /* Experiencia Académica*/
 
 section.academic {
+  background-color: var(--color-section-bg);
+  & .academic__courses {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  & .academic__courses__box {
+    padding: 2rem;
+  }
 }
 
 /* experiencia*/

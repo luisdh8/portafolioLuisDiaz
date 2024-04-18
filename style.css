@@ -10,6 +10,9 @@ coloque nas sessões indicadas*/
   --cor-de-fundo: #030637;
   --color-text-color: #d30f96;
   --color-section-bg: #3c0753;
+  --border-before-color: rgba(221, 221, 221, 0.39);
+  --border-after-color: #5891ff;
+  --input-hovered-color: #4985e01f;
 }
 
 body {
@@ -139,6 +142,7 @@ section.hobbies {
 
 section.academic {
   background-color: var(--color-section-bg);
+  padding: 8px;
   & .academic__courses {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -173,6 +177,7 @@ section.experience {
     cursor: pointer;
     padding: 12px 20px;
     background-color: #e110a0;
+    color: var(--cor-de-fundo);
     font-weight: bold;
     transition-duration: 0.5s;
   }
@@ -181,11 +186,87 @@ section.experience {
 /*Contacto*/
 
 section.formcontato {
+  & h2 {
+    text-align: center;
+  }
+  & .formcontato__form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  /* styling of animated border */
+  .input-border {
+    position: absolute;
+    background: var(--border-after-color);
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s;
+    visibility: hidden; /* Ocultar el borde por defecto */
+  }
+
+  .input:focus + .input-border {
+    visibility: visible; /* Mostrar el borde cuando el input tiene foco */
+    width: 100%;
+  }
+
+  .input {
+    color: var(--color-text-color);
+    font-size: 0.9rem;
+    background-color: transparent;
+    width: 100%;
+    box-sizing: border-box;
+    padding-inline: 0.5em;
+    padding-block: 0.7em;
+    border: none;
+    border-bottom: 1px solid var(--border-before-color);
+  }
+
+  /* Hover on Input */
+  .input:hover {
+    background: var(--input-hovered-color);
+  }
+
+  & textarea {
+    padding: 8px;
+    background-color: transparent;
+    color: var(--color-text-color);
+  }
+
+  & button {
+    max-width: 30%;
+    margin: 0px auto;
+    padding: 12px;
+    background-color: var(--color-section-bg);
+    color: var(--color-text-color);
+    border: none;
+  }
+
+  & button:hover {
+    cursor: pointer;
+    padding: 12px 20px;
+    background-color: #e110a0;
+    color: var(--cor-de-fundo);
+    font-weight: bold;
+    transition-duration: 0.5s;
+  }
 }
 
 /*footeer*/
 
 section.footer {
+  margin-top: 10px;
+  padding: 2px 0px;
+  text-align: center;
+  background-color: var(--color-section-bg);
+
+  .footer__rodape {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
 }
 
 /* Vamos a desafiarnos trabajando con responsividad?

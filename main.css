@@ -1,0 +1,22 @@
+@import url("styles/header.css");
+@import url("styles/profile.css");
+@import url("styles/about.css");
+@import url("styles/skills.css");
+@import url("styles/hobbies.css");
+@import url("styles/education.css");
+@import url("styles/experience.css");
+@import url("styles/contacto.css");
+@import url("styles/footer.css");
+
+body {
+    margin: 0;
+	padding: 0;
+    background-color: var(#F5F5F5);
+    font-family: "Raleway";
+    color: #464646;
+    line-height: 1;
+}
+
+main {
+    display: block;
+}

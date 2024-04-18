@@ -1,0 +1,91 @@
+.title {
+    background-color: 248, 249, 250, 1;
+    padding-right: 5rem;
+    padding-left: 5rem;
+    top: 0;
+    width: 100%;
+    position: relative;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    box-sizing: border-box;
+}
+
+.title__div {
+    padding-top: 3rem;
+    border-radius: 0.5rem;
+    padding: 0 1.5rem 1.5rem 1.5rem;
+    align-items: center;
+    border: 1px solid #dee2e6;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+    border-radius: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.title__container {
+    padding-top: 1rem;
+    padding: 3rem 0rem 3rem 10rem;
+    flex: 0 0 auto;
+    width: 45%;
+}
+
+.title__bio {
+    display: block;
+    margin-top: 0;
+    margin-bottom: .5rem;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: inherit;
+}
+
+.title__subsection {
+    font-size: 1.25rem;
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.title__network {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 1rem;
+}
+
+.title__network__item {
+    cursor: pointer;
+    font-weight: 700;
+    list-style: none;
+}
+
+.title__network__item .nav-link {
+    display: block;
+    padding: 1rem 1rem;
+    text-decoration: none;
+    color: dimgrey;
+}
+
+.title__network__item .nav-link:focus,
+.title__network__item  .nav-link:hover {
+    color: rgba(200, 70, 70, 0.5);
+}
+
+.imagen {
+    width: 40%;
+    text-align: center;
+}
+
+.title__profile {
+    clip-path: circle(40%);
+    vertical-align: middle;
+    width: 400px;
+}

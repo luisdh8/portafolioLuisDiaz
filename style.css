@@ -8,11 +8,14 @@
 
 body {
     background-color: var(--color-de-fondo);
+    width: 100%;
+    height: 100vh;
     font-family: 'Raleway', sans-serif;
     margin: 0;
     box-sizing: border-box;
     padding: 0;
     line-height: 1.6;
+    overflow: auto;
 }
 
 ol, ul, li {
@@ -99,37 +102,30 @@ a {
 .habilidades{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    align-self: stretch;
+    justify-content: center;
     font-weight: bold;
-    white-space: nowrap;
     gap: 2rem;
     padding: 1rem;
+    margin: 0;
+}
+
+.habilidades__titulo{
+    font-size: 1.2rem;
+    margin: 0;
 }
 
 .habilidades__lista{
     display: flex;
-    align-items: flex-start;
     flex-wrap: wrap;
-    padding: 0;
     gap: 1rem;
+    padding: 0;
+    margin: 0;
 }
 .habilidades__elemento{
-    display: flex;
     height: 7.375rem;
-    width: auto;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-start;
+    width: 9.75rem;
     background-color: white;
-    flex-grow: 1;
     padding: 1rem;
-    gap: 0.5rem;
-}
-
-.habilidades__icono{
-    height: 2.3125rem;
-    width: auto;
 }
 
 /*------------------------------ Sección de Aficiones --------------------------------*/

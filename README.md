@@ -2,11 +2,11 @@
 
 ### Welcome to My Portfolio! 🎉
 
-Hi there! I'm **Luis Fernando Díaz Hernández**, a passionate software developer currently studying Computer Science. This portfolio showcases some of my favorite projects, where I’ve applied a variety of technologies to solve real-world problems in creative ways.
+Hi there! I'm **Luis  Díaz**, a passionate software developer currently studying Computer Science. This portfolio showcases some of my favorite projects, where I’ve applied various technologies to solve real-world problems creatively.
 
 ### 🚀 About the Project
 
-This project is part of the **Challenge ONE Front End** program, where I built and designed my portfolio. It's a collection of my work, highlighting both my technical skills and my passion for coding. The portfolio is designed to be user-friendly, responsive, and engaging.
+This project is part of the Challenge ONE Front End program, where I built and designed my portfolio. It's a collection of my work, highlighting my technical skills and passion for coding. The portfolio is designed to be user-friendly, responsive, and engaging.
 
 ### 🛠️ Technologies Used
 

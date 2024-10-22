@@ -98,37 +98,94 @@ a {
 }
 
 /*------------------------------ Sección de Habilidades ------------------------------*/
+/*
+    .skills == .habilidades
+    .skill_line == .habilidades__lista
+    .skills_box == .habilidades__elemento
+    .skill_name == .habilidades__nombre
+*/
 
 .habilidades{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    font-weight: bold;
-    gap: 2rem;
+    align-items: center;
     padding: 1rem;
-    margin: 0;
 }
 
 .habilidades__titulo{
-    font-size: 1.2rem;
+    font-size: 1.375rem;
     margin: 0;
 }
-
 .habilidades__lista{
     display: flex;
     flex-wrap: wrap;
+    padding-left: 0;
     gap: 1rem;
-    padding: 0;
-    margin: 0;
 }
+
 .habilidades__elemento{
-    height: 7.375rem;
-    width: 9.75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: end;
+    width: 155px;
+    height: 118px;
     background-color: white;
     padding: 1rem;
 }
 
+.habilidades__icono{
+    width: auto;
+    height: 2.31rem;
+}
+
+.habilidades__nombre{
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
 /*------------------------------ Sección de Aficiones --------------------------------*/
+
+.aficiones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.aficiones__titulo{
+    font-size: 1.375rem;
+    margin: 0;
+}
+.aficiones__lista{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    gap: 1rem;
+}
+
+.aficiones__elemento{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: end;
+    width: 155px;
+    height: 118px;
+    background-color: white;
+    padding: 1rem;
+}
+
+.aficiones__icono{
+    width: auto;
+    height: 2.31rem;
+}
+
+.aficiones__nombre{
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0;
+}
 
 /*------------------------------ Sección de Educacion --------------------------------*/
 .formacion{

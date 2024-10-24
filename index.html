@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,12 +20,18 @@
         <h1 class="cabecera__titulo">Luis Díaz</h1>
         <nav class="navegacion">
             <ul class="navegacion__lista">
-                <li class="navegacion__elemento"><a class="navegacion__elemento__texto" href="#sobre-mi">About me</a></li>
-                <li class="navegacion__elemento"><a class="navegacion__elemento__texto" href="#habilidades">Skills</a></li>
-                <li class="navegacion__elemento"><a class="navegacion__elemento__texto" href="#aficiones">Hobbies</a></li>
-                <li class="navegacion__elemento"><a class="navegacion__elemento__texto" href="#formacion">Education</a></li>
-                <li class="navegacion__elemento"><a class="navegacion__elemento__texto" href="#proyectos">Projects</a></li>
-                <li class="navegacion__elemento"><a class="navegacion__elemento__texto" id = "contact" href="#contacto">luisdh.8@outlook.com</a></li>
+                <li class="navegacion__elemento"><a class="navegacion__elemento__texto" href="#sobre-mi">About me</a>
+                </li>
+                <li class="navegacion__elemento"><a class="navegacion__elemento__texto" href="#habilidades">Skills</a>
+                </li>
+                <li class="navegacion__elemento"><a class="navegacion__elemento__texto" href="#aficiones">Hobbies</a>
+                </li>
+                <li class="navegacion__elemento"><a class="navegacion__elemento__texto" href="#formacion">Education</a>
+                </li>
+                <li class="navegacion__elemento"><a class="navegacion__elemento__texto" href="#proyectos">Projects</a>
+                </li>
+                <li class="navegacion__elemento"><a class="navegacion__elemento__texto" id="contact"
+                        href="#contacto">luisdh.8@outlook.com</a></li>
             </ul>
         </nav>
     </header>
@@ -34,7 +41,8 @@
         <img class="presentacion__foto" src="assets/profile.png" alt="Foto de perfil">
         <div class="presentacion__contenedor">
             <h2 class="presentacion__titulo">Hi! This is Luis Díaz</h2>
-            <p class="presentacion__subtitulo">I'm CS student from 3rd semester @ Tec de Monterrey, and I'm part of Oracle ONE Alura Latam Front-End Development 2024-2025 course.</p>
+            <p class="presentacion__subtitulo">I'm CS student from 3rd semester @ Tec de Monterrey, and I'm part of
+                Oracle ONE Alura Latam Front-End Development 2024-2025 course.</p>
             <ul class="redes">
                 <li class="redes__img"><a href="">Github <img src="assets/arrow.png" alt="Flecha"></a></li>
                 <li class="redes__img"><a href="">Linkedin <img src="assets/arrow.png" alt="Flecha"></a></li>
@@ -46,8 +54,15 @@
     <!-- Sección sobre mí -->
     <section class="sobre-mi" id="sobre-mi">
         <h2 class="sobre-mi__titulo">About me</h2>
-        <p class="sobre-mi__texto">Hi, I'm Luis Fernando Díaz Hernández, a software developer passionate about using technology to solve real-world problems. I'm currently studying Computer Science and enjoy working with tools like Python, C++, JavaScript, and Oracle APEX. I've developed AI-powered applications and participated in the design of smart systems through IoT. I love diving into cutting-edge technologies to solve real-world challenges.</p>
-        <p class="sobre-mi__texto">Outside of coding, I've been a peer mentor, guiding freshmen through their first year at university, and I also served as a lead engineer for my FIRST Robotics team, Daedalus 7102. I'm a huge Formula 1 fan and participate in sim racing competitions, combining strategy and data analysis to improve my performance.</p>
+        <p class="sobre-mi__texto">Hi, I'm Luis Fernando Díaz Hernández, a software developer passionate about using
+            technology to solve real-world problems. I'm currently studying Computer Science and enjoy working with
+            tools like Python, C++, JavaScript, and Oracle APEX. I've developed AI-powered applications and participated
+            in the design of smart systems through IoT. I love diving into cutting-edge technologies to solve real-world
+            challenges.</p>
+        <p class="sobre-mi__texto">Outside of coding, I've been a peer mentor, guiding freshmen through their first year
+            at university, and I also served as a lead engineer for my FIRST Robotics team, Daedalus 7102. I'm a huge
+            Formula 1 fan and participate in sim racing competitions, combining strategy and data analysis to improve my
+            performance.</p>
         <p class="sobre-mi__texto">Take a look at my projects, and feel free to reach out if you'd like to connect!</p>
     </section>
 
@@ -79,7 +94,7 @@
                 <img class="habilidades__icono" src="assets/css_icon.png" alt="CSS">
                 <p class="habilidades__nombre">CSS</p>
             </li>
-            
+
             <li class="habilidades__elemento">
                 <img class="habilidades__icono" src="assets/nodejs_icon.png" alt="Node.js">
                 <p class="habilidades__nombre">Node.js</p>
@@ -128,7 +143,7 @@
                 </div>
                 <div>
                     <h3 class="formacion__nombre">BS. Computer Science</h3>
-                    <p class="formacion__detalle">August 2023  - June 2027</p>
+                    <p class="formacion__detalle">August 2023 - June 2027</p>
                 </div>
             </li>
             <li class="formacion__elemento">
@@ -146,24 +161,69 @@
     <!-- Sección de Proyectos -->
     <section class="proyectos" id="proyectos">
         <h2 class="proyectos__titulo">Projects</h2>
-        <div class="proyectos__contenedor">
-            <h3 class="proyectos__nombre">ChatERP</h3>
-            <p class="proyectos__descripcion">GUADALAHACKS's ERP System with Natural Language Processing</p>
-        </div>
-        <div class="proyectos__contenedor">
-            <h3 class="proyectos__nombre">Text Encryptor</h3>
-            <p class="proyectos__descripcion">Oracle's challenge
-            </p>
-        </div>
-        <div class="proyectos__contenedor">
-            <h3 class="proyectos__nombre">ChatERP</h3>
-            <p class="proyectos__descripcion">GUADALAHACKS's ERP System with Natural Language Processing</p>
-        </div>
-        <div class="proyectos__contenedor">
-            <h3 class="proyectos__nombre">FIRST Robotics Team Daedalus 7102</h3>
-            <p class="proyectos__descripcion">Lead Engineer</p>
-        </div>
+        <ul class="proyectos__lista">
+            <li class="proyectos__elemento">
+                <div class="proyectos__elemento__imagen">
+                    <img class="proyectos__icono" src="assets/chaterp.png" alt="ChatERP">
+                </div>
+                <div>
+                    <h3 class="proyectos__nombre">ChatERP</h3>
+                    <p class="proyectos__detalle">GUADALAHACKS's ERP System with Natural Language Processing</p>
+                    <div class="proyectos__botones">
+                        <a href="https://github.com/Alfredcrmn/hackardi" class="proyectos__boton__repo"
+                            target="_blank">Repository</a>
+                        <a href="https://devpost.com/software/chaterp" class="proyectos__boton__extra"
+                            target="_blank">DevPost</a>
+                    </div>
+                </div>
+            </li>
+            <li class="proyectos__elemento">
+                <div class="proyectos__elemento__imagen">
+                    <img class="proyectos__icono" src="assets/tasksTriumphs.png" alt="TasksnTriumphs">
+                </div>
+                <div>
+                    <h3 class="proyectos__nombre">Tasks & Triumphs</h3>
+                    <p class="proyectos__detalle">HACKMTY's Personal Habit Tracker Interface Across Well-being
+                        Dimensions</p>
+                    <div class="proyectos__botones">
+                        <a href="https://github.com/Alfredcrmn/Tasks-n-Triumphs" class="proyectos__boton__repo"
+                            target="_blank">Repository</a>
+                        <a href="https://live-demo-link.com" class="proyectos__boton__extra" target="_blank">DevPost</a>
+                    </div>
+                </div>
+            </li>
+            <li class="proyectos__elemento">
+                <div class="proyectos__elemento__imagen">
+                    <img class="proyectos__icono" src="assets/textEncryptor.png" alt="Text Encryptor">
+                </div>
+                <div>
+                    <h3 class="proyectos__nombre">Text Encryptor</h3>
+                    <p class="proyectos__detalle">Oracle's challenge</p>
+                    <div class="proyectos__botones">
+                        <a href="https://github.com/luisdh8/encriptador-texto" class="proyectos__boton__repo"
+                            target="_blank">Repository</a>
+                        <a href="https://luisdh8.github.io/encriptador-texto/" class="proyectos__boton__extra"
+                            target="_blank">Try Out!</a>
+                    </div>
+                </div>
+            </li>
+            <li class="proyectos__elemento">
+                <div class="proyectos__elemento__imagen">
+                    <img class="proyectos__icono" src="assets/daedalus.png" alt="FIRST Robotics Team Daedalus 7102">
+                </div>
+                <div>
+                    <h3 class="proyectos__nombre">FIRST Robotics Team Daedalus 7102</h3>
+                    <p class="proyectos__detalle">Lead Engineer</p>
+                    <div class="proyectos__botones">
+                        <a href="https://www.instagram.com/daedalus7102/?hl=es" class="proyectos__boton__extra"
+                            target="_blank">Instagram</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
     </section>
+
+
 
     <!-- Sección de Contacto -->
     <section class="contacto" id="contacto">
@@ -174,11 +234,12 @@
         <form class="contacto__formulario">
             <input class="contacto__campo" type="text" placeholder="Name">
             <input class="contacto__campo" type="email" placeholder="Email">
-            <input class = ""contacto__campo" type = "text" placeholder = "Subject">
+            <input class="" contacto__campo" type="text" placeholder="Subject">
             <textarea class="contacto__campo contacto__campo--textarea" placeholder="Message"></textarea>
             <button class="contacto__boton" type="submit">Submit</button>
         </form>
     </section>
 </body>
-    <script src="script.js"></script>
+<script src="script.js"></script>
+
 </html>

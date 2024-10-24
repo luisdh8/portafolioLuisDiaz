@@ -247,11 +247,89 @@ a {
 
 /*------------------------------ Sección de Proyectos --------------------------------*/
 
+.proyectos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.proyectos__titulo{
+    font-size: 1.375rem;
+    margin: 0;
+}
+
+.proyectos__lista{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 76.75rem;
+    width: 18.5rem;
+    padding-left: 0;
+    margin: 0;
+    gap: 3rem;
+}
+
+.proyectos__elemento__imagen{
+    height: 9rem;
+    width: 18.5rem;
+}
+
+.proyectos__elemento{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 18.5rem;
+    height: 16.6875rem;
+}
+
+.proyectos__nombre{
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
+.proyectos__detalle{
+    font-size: 0.875rem;
+    margin: 0;
+}
+
+.proyectos__botones{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-size: 0.875rem;
+    font-weight: bold;
+    height: 2.5rem;
+    gap: 1rem;
+}
+
+.proyectos__boton__repo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2A7AE4;
+    padding: 0.75rem;
+    border: 1px solid #2A7AE4;
+    border-radius: 0.5rem;
+}
+
+.proyectos__boton__extra{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #669FC8;
+    color: white;
+    padding: 0.75rem;
+    border: 1px solid;
+    border-radius: 0.5rem;
+}
 
 /*------------------------------ Sección de Contacto ---------------------------------*/
 .contacto{
     background-color: var(--color--de-fondo-seccion);
 }
+
 /* ------------------------------ Responsividad ---------------------------------------*/
 
 /* Tablets y pantallas más grandes */

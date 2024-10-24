@@ -223,22 +223,35 @@
         </ul>
     </section>
 
-
-
     <!-- Sección de Contacto -->
     <section class="contacto" id="contacto">
         <h2 class="contacto__titulo">Contact me</h2>
         <p>
             If you want to get in touch, feel free to send me an email with your data and soon I'll respond you :)
         </p>
-        <form class="contacto__formulario">
-            <input class="contacto__campo" type="text" placeholder="Name">
-            <input class="contacto__campo" type="email" placeholder="Email">
-            <input class="contacto__campo" type="text" placeholder="Subject">
-            <textarea class="contacto__campo__t" placeholder="Message"></textarea>
-            <button class="contacto__boton" type="submit">Submit</button>
+        <form class="contacto__formulario" id="contactForm" onsubmit="return validateForm()">
+            <input class="contacto__campo" type="text" id="name" placeholder="Name" maxlength="50" required>
+            <span id="nameError" class="error"></span>
+
+            <input class="contacto__campo" type="email" id="email" placeholder="Email" required>
+            <span id="emailError" class="error"></span>
+
+            <input class="contacto__campo" type="text" id="subject" placeholder="Subject" maxlength="50" required>
+            <span id="subjectError" class="error"></span>
+
+            <textarea class="contacto__campo__t" id="message" placeholder="Message" maxlength="300" required></textarea>
+            <span id="messageError" class="error"></span>
+
+            <button class="contacto__boton" type="submit" id="submitButton" disabled>Submit</button>
         </form>
     </section>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init(REACT_APP_EMAILJS_USER_ID); // Reemplaza "YOUR_USER_ID" con tu ID de usuario de EmailJS
+        })();
+    </script>
+
 </body>
 <script src="script.js"></script>
 

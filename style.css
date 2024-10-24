@@ -119,6 +119,7 @@ a {
 .habilidades__lista{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     padding-left: 0;
     gap: 1rem;
 }
@@ -161,6 +162,7 @@ a {
 .aficiones__lista{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     padding-left: 0;
     gap: 1rem;
 }
@@ -190,7 +192,59 @@ a {
 /*------------------------------ Sección de Educacion --------------------------------*/
 .formacion{
     background-color: var(--color--de-fondo-seccion);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
 }
+
+.formacion__titulo{
+    font-size: 1.375rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+
+.formacion__lista{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 22.125rem;
+    width: 18.5rem;
+    padding-left: 0;
+    margin: 0;
+    gap: 1rem;
+}
+
+.formacion__elemento{
+    display: flex;
+    flex-direction: column;
+    height: 10.5625rem;
+    width: 18.5rem;
+    
+}
+
+.formacion__elemento__imagen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7.375rem;
+    width: 18.5rem;
+    background-color: white;
+}
+
+.formacion__elemento div h3{
+    font-size: 1.1875rem;
+}
+
+.formacion__elemento div p{
+    font-size: 1rem;
+}
+
+.formacion__elemento div h3, .formacion__elemento div p{
+    margin: 0;
+}
+
 /*------------------------------ Sección de Proyectos --------------------------------*/
 
 

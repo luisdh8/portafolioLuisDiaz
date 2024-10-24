@@ -11,6 +11,7 @@
     <!-- Fuente del Proyecto Raleway -->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
     <title>Mi Portafolio</title>
+    <script src="config.js"></script> <!-- Incluye el archivo de configuración -->
 </head>
 
 <body>
@@ -248,11 +249,12 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript">
         (function () {
-            emailjs.init(REACT_APP_EMAILJS_USER_ID); // Reemplaza "YOUR_USER_ID" con tu ID de usuario de EmailJS
+            emailjs.init(emailConfig.userId); // Reemplaza "YOUR_USER_ID" con tu ID de usuario de EmailJS
         })();
     </script>
 
 </body>
+
 <script src="script.js"></script>
 
 </html>

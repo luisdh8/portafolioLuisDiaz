@@ -96,10 +96,10 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     const isFormValid = validateForm();
 
     if (isFormValid) {
-        // Enviar el correo con EmailJS usando variables de entorno
+        // Enviar el correo con EmailJS usando el archivo de configuración
         emailjs.send(
-            process.env.REACT_APP_EMAILJS_SERVICE_ID,
-            process.env.REACT_APP_EMAILJS_TEMPLATE_ID, 
+            emailConfig.serviceId,
+            emailConfig.templateId, 
             {
                 name: document.getElementById('name').value,
                 email: document.getElementById('email').value,

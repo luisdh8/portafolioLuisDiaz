@@ -492,14 +492,143 @@ a {
     
 }
 
+
 /* Pantallas grandes */
 @media (min-width: 1024px) {
     /* Aquí puedes ajustar aún más el diseño para pantallas grandes */
-    .cabecera__titulo {
-        font-size: 1.8rem;
+    
+    /*Cabecera*/
+    .cabecera{
+        height: 5.5rem;
+        font-size: 1rem;
+        padding: 1rem;
+    }
+    /*NaVegacion: se necesita ahora si mostrar la lista, incluyendo contacto*/
+    .navegacion{
+        display: flex;
+        justify-content: flex-end;
+        width: 42.75rem;
     }
 
-    .navegacion__elemento a {
-        font-size: 1.1rem;
+    .navegacion__lista{
+        padding: 0;
+        gap: 1rem;
+    }
+    .navegacion__elemento a:not(#contact) {
+        display: block;
+        font-size: 1rem;
+    }
+
+    #contact {
+        font-size: 1rem;
+    }
+
+    /*Presentacion*/
+    .presentacion{
+        padding-left: 5rem;
+        padding-right: 5rem;
+        gap: 1rem;
+    }
+
+    .presentacion__foto{
+        width: 328px;
+        height: 328px;
+    }
+    
+    .presentacion__contenedor{
+        padding: 1rem;
+    }
+
+
+    .presentacion__titulo{
+        font-size: 3.25rem;
+    }
+
+    .presentacion__subtitulo{
+        font-size: 1.375rem;
+    }
+
+    .redes{
+        gap: 2rem;
+    }
+
+    /*Sobre mi*/
+    .sobre-mi{
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    .sobre-mi__titulo{
+        font-size: 2rem;
+    }
+
+    /*Habilidades*/
+    .habilidades__titulo{
+        font-size: 2rem;
+    }
+
+    /*Aficiones*/
+    .aficiones__titulo{
+        font-size: 2rem;
+    }
+
+    /*Educacion*/
+    .formacion__titulo{
+        font-size: 2rem;
+    }
+
+    .formacion__lista{
+        height: 21.6875rem;
+        width: 100%;
+        gap: 3rem;
+    }
+
+    .formacion__elemento{
+        height: 21.6875rem;
+        width: 23rem;
+    }
+
+    .formacion__elemento__imagen{
+        height: 17.875rem;
+        width: 23rem;
+    }
+
+    .formacion__icono{
+        width: 18rem;
+        height: auto;
+    }
+
+    /*Proyectos*/
+    .proyectos__titulo{
+        font-size: 2rem;
+    }
+
+    .proyectos{
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    .proyectos__lista{
+        height: 113.5rem;
+        width: 49rem;
+    }
+
+    .proyectos__elemento__imagen{
+        height: 25.375rem;
+        width: 35.5rem;
+    }
+    
+    .proyectos__icono{
+        height: 25.375rem;
+        width: 35.5rem;
+    }
+
+    .proyectos__elemento{
+        width: 49rem;
+        height: 25.375rem;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+
     }
 }

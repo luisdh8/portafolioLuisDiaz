@@ -472,7 +472,7 @@ a {
     /*Proyectos*/
     .proyectos__lista{
         height: 119.4375rem;
-        width: 44rem;
+        width: 100%
     }
 
     .proyectos__elemento{
@@ -601,34 +601,5 @@ a {
     /*Proyectos*/
     .proyectos__titulo{
         font-size: 2rem;
-    }
-
-    .proyectos{
-        padding-left: 5rem;
-        padding-right: 5rem;
-    }
-
-    .proyectos__lista{
-        height: 113.5rem;
-        width: 49rem;
-    }
-
-    .proyectos__elemento__imagen{
-        height: 25.375rem;
-        width: 35.5rem;
-    }
-    
-    .proyectos__icono{
-        height: 25.375rem;
-        width: 35.5rem;
-    }
-
-    .proyectos__elemento{
-        width: 49rem;
-        height: 25.375rem;
-        flex-direction: row;
-        align-items: center;
-        gap: 1rem;
-
     }
 }

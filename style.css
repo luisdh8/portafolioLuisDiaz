@@ -67,10 +67,10 @@ a {
 /* ------------------------------ Sección Presentación ------------------------------*/
 .presentacion{
     font-size: 1.143rem;
-    padding: 1rem;
+    padding: 2rem;
 }
 .presentacion__foto {
-    width: 98px;
+    width: 146px;
     height: auto;
     border-radius: 11.5rem;
     box-shadow: 0px 7px 12px 0 rgba(20, 20, 20, 0.3);
@@ -89,7 +89,7 @@ a {
 }
 /* ------------------------------ Sección sobre mí ----------------------------------*/
 .sobre-mi{
-    padding: 1.2rem;
+    padding: 2rem;
     background-color: var(--color--de-fondo-seccion);
 }
 
@@ -221,7 +221,6 @@ a {
     flex-direction: column;
     height: 10.5625rem;
     width: 18.5rem;
-    
 }
 
 .formacion__elemento__imagen{
@@ -256,7 +255,7 @@ a {
 
 .proyectos__titulo{
     font-size: 1.375rem;
-    margin: 0;
+    margin-top: 0;
 }
 
 .proyectos__lista{
@@ -271,6 +270,11 @@ a {
 }
 
 .proyectos__elemento__imagen{
+    height: 9rem;
+    width: 18.5rem;
+}
+
+.proyectos__icono{
     height: 9rem;
     width: 18.5rem;
 }
@@ -384,30 +388,108 @@ a {
 
 /* Tablets y pantallas más grandes */
 @media (min-width: 768px) {
+    /*Cabecera*/
     .cabecera {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
+        height: 3.5rem;
+        padding: 2rem;
     }
 
-    .cabecera__logo {
-        max-width: 100px;
+    .cabecera__logo{
+        max-width: 32px;
     }
 
     .cabecera__titulo {
         font-size: 1.5rem;
-    }
 
-    .navegacion__lista {
-        display: flex;
-        flex-direction: row;
-        gap: 1rem;
-        margin-top: 0;
     }
 
     .navegacion__elemento a {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
+
+    /*Presentacion*/
+    .presentacion{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem;
+    }
+
+    .presentacion__foto{
+        width: 146px;
+        height: 146px;
+    }
+
+    /*Sobre mi*/
+
+    /*Habilidades*/
+    .habilidades__elemento{
+        width: 224px;
+    }
+
+    .habilidades__lista{
+        gap: 2rem;
+    }
+
+    .habilidades__icono{
+        width: auto;
+        height: 2.18rem;
+    }
+
+    /*Aficiones*/
+    .aficiones__elemento{
+        width: 224px;
+    }
+
+    .aficiones__lista{
+        gap: 2rem;
+    }
+
+    .aficiones__icono{
+        width: auto;
+        height: 2.18rem;
+    }
+
+    /*Educacion*/
+    .formacion__lista{
+        flex-direction: row;
+        height: 10.56rem;
+        width: 100%;
+        gap: 1rem;
+    }
+
+    .formacion__elemento{
+        height: 10.56rem;
+        width: 21.5rem;
+    }
+
+    .formacion__elemento__imagen{
+        height: 10.56rem;
+        width: 21.5rem;
+    }
+
+    /*Proyectos*/
+    .proyectos__lista{
+        height: 119.4375rem;
+        width: 44rem;
+    }
+
+    .proyectos__elemento{
+        width: 44rem;
+        height: 26.6875rem;
+    }
+
+    .proyectos__elemento__imagen{
+        height: 20rem;
+        width: 44rem;
+    }
+
+    .proyectos__icono{
+        height: 20rem;
+        width: 44rem;
+    }
+    
 }
 
 /* Pantallas grandes */

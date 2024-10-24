@@ -605,6 +605,42 @@ a {
 }
 
 @media (min-width: 1440px){
+    /*Habilidades*/
+    .habilidades__lista{
+        gap: 3rem;
+    }
+
+    .habilidades__elemento{
+        width: 300px;
+    }
+
+    /*Aficiones*/
+    .aficiones__lista{
+        gap: 3rem;
+    }
+
+    .aficiones__elemento{
+        width: 300px;
+    }
+
+    /*Educacion*/
+    .formacion__lista{
+        gap: 7rem;
+    }
+
+    .formacion__elemento{
+        width: 490px;
+    }
+
+    .formacion__elemento__imagen{
+        width: 490px;
+    }
+
+    .formacion__icono{
+        width: 490px;
+    }
+
+
     /*Proyectos*/
     .proyectos__lista{
         height: auto;

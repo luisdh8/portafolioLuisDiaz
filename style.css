@@ -327,9 +327,59 @@ a {
 
 /*------------------------------ Sección de Contacto ---------------------------------*/
 .contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem;
     background-color: var(--color--de-fondo-seccion);
 }
 
+.contacto__titulo{
+    font-size: 1.375rem;
+    margin: 0;
+}
+
+.contacto p{
+    font-size: 1rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+
+.contacto__formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+}
+
+.contacto__campo{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    height: 3.5rem;
+    border-radius: 4px;
+    border: transparent;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+}
+
+.contacto__campo__t{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    height: 8.31rem;
+    border-radius: 4px;
+    border: transparent;
+    padding: 0.75rem;
+}
+
+.contacto__boton{
+    background-color: #669FC8;
+    color: white;
+    font-weight: bold;
+    border: transparent;
+    border-radius: 4px;
+    height: 2.5rem;
+    font-size: 1rem;
+}
 /* ------------------------------ Responsividad ---------------------------------------*/
 
 /* Tablets y pantallas más grandes */

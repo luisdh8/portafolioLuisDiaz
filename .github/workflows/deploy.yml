@@ -10,22 +10,22 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
+      - name: Checkout code
+        uses: actions/checkout@v2
 
-    - name: Generate config.js
-      run: |
-        echo "const emailConfig = {" > config.js
-        echo "    userId: '${{ secrets.EMAILJS_USER_ID }}'," >> config.js
-        echo "    templateId: '${{ secrets.EMAILJS_TEMPLATE_ID }}'," >> config.js
-        echo "    serviceId: '${{ secrets.EMAILJS_SERVICE_ID }}'" >> config.js
-        echo "};" >> config.js
+      - name: Generate config.js
+        run: |
+          echo "const emailConfig = {" > config.js
+          echo "    userId: '${{ secrets.EMAILJS_USER_ID }}'," >> config.js
+          echo "    templateId: '${{ secrets.EMAILJS_TEMPLATE_ID }}'," >> config.js
+          echo "    serviceId: '${{ secrets.EMAILJS_SERVICE_ID }}'" >> config.js
+          echo "};" >> config.js
 
-    - name: List files in publish directory
-      run: ls -la ./  # Esto listará los archivos en la raíz del repositorio
+      - name: List files in publish directory
+        run: ls -la ./  # Esto listará los archivos en la raíz del repositorio
 
-    - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./  # Asegúrate de que esto sea correcto
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./  # Asegúrate de que esto sea correcto

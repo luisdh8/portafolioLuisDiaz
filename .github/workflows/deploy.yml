@@ -1,0 +1,34 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # o el nombre de la rama que uses
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out code
+      uses: actions/checkout@v2
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Build project
+      run: npm run build  # Reemplaza con el comando de construcción adecuado si usas otro
+
+    - name: Create config.js file with secrets
+      run: |
+        echo "const emailConfig = {" > ./docs/config.js
+        echo "  userId: '${{ secrets.EMAILJS_USER_ID }}'," >> ./docs/config.js
+        echo "  templateId: '${{ secrets.EMAILJS_TEMPLATE_ID }}'," >> ./docs/config.js
+        echo "  serviceId: '${{ secrets.EMAILJS_SERVICE_ID }}'" >> ./docs/config.js
+        echo "};" >> ./docs/config.js
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./docs

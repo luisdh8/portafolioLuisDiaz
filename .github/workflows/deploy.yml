@@ -8,6 +8,8 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write  # Permiso para escribir en el repositorio
 
     steps:
       - name: Checkout code

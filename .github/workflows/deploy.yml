@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # o el nombre de la rama que uses
+      - repositorio-base  # o el nombre de la rama que uses
 
 jobs:
   deploy:

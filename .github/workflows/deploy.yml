@@ -3,32 +3,29 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - repositorio-base  # o el nombre de la rama que uses
+      - main  # Cambia esto a tu rama principal si es necesario
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Check out code
+    - name: Checkout code
       uses: actions/checkout@v2
 
-    - name: Install dependencies
-      #run: npm install
-
-    - name: Build project
-      run: npm run build  # Reemplaza con el comando de construcción adecuado si usas otro
-
-    - name: Create config.js file with secrets
+    - name: Generate config.js
       run: |
-        echo "const emailConfig = {" > ./docs/config.js
-        echo "  userId: '${{ secrets.EMAILJS_USER_ID }}'," >> ./docs/config.js
-        echo "  templateId: '${{ secrets.EMAILJS_TEMPLATE_ID }}'," >> ./docs/config.js
-        echo "  serviceId: '${{ secrets.EMAILJS_SERVICE_ID }}'" >> ./docs/config.js
-        echo "};" >> ./docs/config.js
+        echo "const emailConfig = {" > config.js
+        echo "    userId: '${{ secrets.EMAILJS_USER_ID }}'," >> config.js
+        echo "    templateId: '${{ secrets.EMAILJS_TEMPLATE_ID }}'," >> config.js
+        echo "    serviceId: '${{ secrets.EMAILJS_SERVICE_ID }}'" >> config.js
+        echo "};" >> config.js
+
+    - name: List files in publish directory
+      run: ls -la ./  # Esto listará los archivos en la raíz del repositorio
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./
+        publish_dir: ./  # Asegúrate de que esto sea correcto

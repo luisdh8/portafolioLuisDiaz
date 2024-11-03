@@ -247,16 +247,10 @@
         </form>
     </section>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script>
-        // Llama a loadConfig para cargar la configuración
-        loadConfig().then(emailConfig => {
-            console.log('Email configuration loaded:', emailConfig);
-            emailjs.init(emailConfig.userId); // Inicializa EmailJS con el userId cargado
-
-            // Aquí puedes agregar el resto de tu código que usa EmailJS
-        }).catch(error => {
-            console.error('Error loading config:', error);
-        });
+    <script type="text/javascript">
+        (function () {
+            emailjs.init(emailConfig.userId); // Reemplaza "YOUR_USER_ID" con tu ID de usuario de EmailJS
+        })();
     </script>
 
 </body>

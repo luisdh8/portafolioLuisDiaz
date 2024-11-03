@@ -89,31 +89,36 @@ function validateForm() {
     }
 }
 
-document.getElementById('contactForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Evita el envío tradicional del formulario
+// Suponiendo que loadConfig ya está definida en config.js
+loadConfig().then(emailConfig => {
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Evita el envío tradicional del formulario
 
-    // Realiza la validación
-    const isFormValid = validateForm();
+        // Realiza la validación
+        const isFormValid = validateForm();
 
-    if (isFormValid) {
-        // Enviar el correo con EmailJS usando el archivo de configuración
-        emailjs.send(
-            emailConfig.serviceId,
-            emailConfig.templateId, 
-            {
-                name: document.getElementById('name').value,
-                email: document.getElementById('email').value,
-                subject: document.getElementById('subject').value,
-                message: document.getElementById('message').value
-            }
-        )
-        .then(function(response) {
-            alert("Email sent successfully!");
-        }, function(error) {
-            alert("Failed to send email. Please try again.");
-            console.log('FAILED...', error);
-        });
-    }
+        if (isFormValid) {
+            // Enviar el correo con EmailJS usando el archivo de configuración
+            emailjs.send(
+                emailConfig.serviceId,
+                emailConfig.templateId,
+                {
+                    name: document.getElementById('name').value,
+                    email: document.getElementById('email').value,
+                    subject: document.getElementById('subject').value,
+                    message: document.getElementById('message').value
+                }
+            )
+            .then(function(response) {
+                alert("Email sent successfully!");
+            }, function(error) {
+                alert("Failed to send email. Please try again.");
+                console.log('FAILED...', error);
+            });
+        }
+    });
+}).catch(error => {
+    console.error('Error loading config:', error);
 });
 
 // Escucha de eventos en los campos para habilitar el botón de envío

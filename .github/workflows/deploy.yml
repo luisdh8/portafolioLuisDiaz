@@ -13,7 +13,7 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3  # Actualiza a la versión más reciente
 
       - name: Generate config.js
         env:
@@ -27,11 +27,14 @@ jobs:
           echo "    serviceId: '$EMAILJS_SERVICE_ID'" >> config.js
           echo "};" >> config.js
 
+      - name: Show config.js content
+        run: cat config.js  # Verifica el contenido de config.js
+
       - name: List files in publish directory
         run: ls -la ./  # Esto listará los archivos en la raíz del repositorio
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
+        uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./  # Asegúrate de que esto sea correcto

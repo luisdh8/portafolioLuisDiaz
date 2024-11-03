@@ -31,3 +31,6 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./  # Asegúrate de que esto sea correcto
+
+      - name: Remove config.js after deployment
+        run: rm config.js  # Eliminar config.js para no dejarlo en la rama gh-pages
